@@ -1,0 +1,64 @@
+{
+  "name": "@longnc/themartec-j",
+  "version": "1.0.0",
+  "author": "sheetjs",
+  "description": "CLI tool for working with spreadsheet files",
+  "keywords": [
+    "excel",
+    "xls",
+    "xlsx",
+    "xlsm",
+    "xlsb",
+    "ods",
+    "dif",
+    "csv",
+    "sylk",
+    "prn",
+    "ods",
+    "dbf",
+    "office",
+    "spreadsheet"
+  ],
+  "bin": {
+    "j": "bin/j.njs"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "bin",
+    "j.js"
+  ],
+  "main": "./j",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "concat-stream": "^2.0.0",
+    "exit-on-epipe": "^1.0.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-latest/xlsx-latest.tgz"
+  },
+  "devDependencies": {
+    "mocha": "^11.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themartec/j.git"
+  },
+  "scripts": {
+    "test": "make travis"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "[./j.js,./node_modules/xlsx/xlsx.js]"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/themartec/j/issues"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "homepage": "https://github.com/themartec/j#readme"
+}
